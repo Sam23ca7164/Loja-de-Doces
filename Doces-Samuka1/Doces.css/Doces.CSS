@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen (max-width:1200px) {
+    body {
+        width: 1000;
+    }
+}
+
+body {
+    background-color: rgb(247, 211, 211);
+}
+
+p {
+    position: relative;
+    padding-bottom: 20px;
+    left: 30px;
+    margin: 5px;
+    word-break: normal;
+}
+
+.symbol {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234, 71, 59);
+    border-radius: 60px;
+    position: relative;
+}
+
+.symbol:before {
+    display: block;
+    content: "";
+    background-color: rgb(203, 29, 36);
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+    border-radius: 14px;
+    border-top-left-radius: 100%;
+}
+
+.symbol,
+.symbol:before {
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.nome {
+    color: brown;
+    font-family: "Bodoni MT Black";
+    font-size: 40px;
+    line-height: 105%;
+    position: absolute;
+    left: 130px;
+    top: 7px;
+}
+
+h1 {
+    color: brown;
+    font-family: "Bodoni MT Black";
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.slogan {
+    color: brown;
+    font-family: "Bodoni MT Black";
+    font-size: 30px;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    text-shadow: rgb(175, 76, 76) 0.1em 0.1em 0.2em
+}
+
+p {
+    color: brown;
+    font-family: "Bodoni MT";
+    font-size: 20px;
+}
+
+img,
+.vitrine {
+    display: inline;
+    justify-content: space-between;
+    width: 400px;
+    height: 300px;
+    border-radius: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+p.click {
+    text-align: center;
+    background-color: rgb(234, 71, 59);
+    background-position: center;
+    border-radius: 100%;
+    width: 220px;
+    height: 50px;
+    margin-left: 500px;
+}
+
+ul.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(165, 42, 42);
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(165, 42, 42);
+}
+
+.container-vitrine {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: 300px;
+}
+
+.item-vitrine {
+    position: relative;
+}
+
+.item-vitrine .container-vitrine {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+
+.image {
+    width: 200px;
+    height: 120px;
+}
+
+#area {
+    position: relative;
+    left: 3%;
+    top: 60px;
+    width: 320px;
+    height: 270px;
+}
+
+#area #formulario {
+    position: absolute;
+    display: block;
+}
+
+legend{
+    font-style: bold;
+    font-family: "Bodoni MT";
+    font-size: 20px;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+div.body-content {
+    padding-bottom: 100px;
+}
+
+
+.container-doces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-Detalhes1 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 10px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin-top: 90px;
+    width: 400px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+
+.card-Detalhes1:hover {
+    cursor: pointer;
+    width: 300px;
+}
+
+
+.seta {
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 120px;
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px rgb(165, 42, 42);
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(316deg);
+}
