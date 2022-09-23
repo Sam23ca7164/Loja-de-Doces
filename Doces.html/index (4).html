@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Doces.css/Doces.CSS">
+  <title>Vitrine</title>
+</head>
+<header>
+  <ul class="nav-bar">
+    <li><a class="active" href="/Doces.html/Doces.HTML">Doces do Samuka</a></li>
+    <li><a href="/Doces.html/Doces.HTML">Início</a></li>
+    <li><a href="/Doces.html/Doces.HTML">Contatos</a></li>
+  </ul>
+</header>
+
+<body>
+  <br><br>
+  <h1>Vitrine de produtos</h1>
+  <div class="container-vitrine">
+    <div class="item-vitrine">
+      <img src="/Amendoim.webp" alt="goibinha de Amendoim" class="container-vitrine">
+    </div>
+    <div class="item-vitrine">
+      <img src="/Casadogoiaba.webp" alt="goibinha de Amendoim" class="container-vitrine">
+    </div>
+    <div class="item-vitrine">
+      <img src="/Palmiergourmet.webp" alt="goibinha de Amendoim" class="container-vitrine">
+    </div>
+    <img src="/Sequilhocondesado.webp" alt="goibinha de Amendoim" class="container-vitrine">
+  </div>
+  <div class="row">
+    <div class="card green">
+      <img class="image" src="/Fatiandodoce.webp" alt="doce de goiabada" />
+      <h2>Doce de goiabada</h2>
+      <a href="#" style="text-decoration:none">Detalhes</a>
+    </div>
+
+    <div class="card blue">
+      <img class="image" src="/Merengue.webp" alt="doce de um Merengue" />
+      <h2>Merengue</h2>
+      <a href="#" style="text-decoration:none">Detalhes</a>
+    </div>
+
+    <div class="card red">
+      <img class="image" src="/Nevada.webp" alt="doce nevada" />
+      <h2>Nevada</h2>
+      <a href="#" style="text-decoration:none">Detalhes</a>
+    </div>
+
+    <div class="card red">
+      <img class="image" src="/Sequilhocondesado.webp" alt="Sequilho condesado" />
+      <h2>Sequilhos</h2>
+      <a href="#" style="text-decoration:none">Detalhes</a>
+    </div>
+  </div>
+  <div id="area">
+    <form id="formulario" autocomplete="off">
+      <fieldset>
+        <legend class="promocoes">Deseja receber nossas promoções</legend>
+        <label>Nome:</label><input class="campo_nome" type="text"><br><br>
+        <label>Email:</label><input class="campo_email" type="password"><br><br>
+        <input type="submit" class="btn btn-primary" id="btn_cadastro" onclick="cadastro()" />
+        <script>
+          function cadastro() {
+            alert('Email cadastrado com sucesso');
+          }
+        </script>
+
+      </fieldset>
+      <footer id="rodape">
+        <p>&copy; Tudo </p>
+        <fieldset>
+          <legend>Termo de uso</legend>
+          <div>
+            <input type="checkbox" id="scales" name="Sim" checked>
+            <label for="scales">Sim</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Não</label>
+          </div><br>
+          <div>
+            <input type="submit" class="enviar" name="Enviar"">
+                  </div>
+              </fieldset>
+          
+          </footer>
+        </div>
+</body>
+</html>
